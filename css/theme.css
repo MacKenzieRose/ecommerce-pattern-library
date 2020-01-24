@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #231f20;
+  --color-accent: #396a61;
+  --color-greyed-text: #97929b;
+  --color-banners: #fde9ea;
+
+  --font-primary: Georgia, serif;
+  --font-secondary: Roboto, sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
