@@ -4,8 +4,22 @@
   color: var(--color-greyed-text);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-background);
   border-color: var(--color-primary);
   color: var(--color-primary);
-  background-color: var(--color-background);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-background);
 }
