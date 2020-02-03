@@ -27,5 +27,6 @@
 .m-2-3,
 .l-2-3,
 .xl-2-3 {
+  display: block;
   width: 66.6667%;
 }
