@@ -1,3 +1,4 @@
+/* General button and header button stylings; change border radius for sharp edges*/
 .btn,
 .btn-header {
   background-color: var(--color-background);
@@ -6,6 +7,7 @@
   color: var(--color-greyed-text);
 }
 
+/* General & footer buttons hover & focus states */
 .btn:hover,
 .btn:focus,
 .btn-footer:hover,
@@ -15,16 +17,19 @@
   color: var(--color-primary);
 }
 
+/* Remove border everywhere but the bottom for header buttons */
 .btn-header {
   border-width: 0 0 2px;
 }
 
+/* Accent button styling */
 .btn-accent {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-background);
 }
 
+/* Footer button default state; accent button focus & hover states */
 .btn-footer,
 .btn-accent:hover,
 .btn-accent:focus {
