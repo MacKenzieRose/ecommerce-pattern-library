@@ -84,11 +84,11 @@ patterns:
       - name: aria
         type: string
         example: "This button will submit your shipping and payment information"
-  icon:
+  search:
     title: "Search Icon"
-      description: |
-        This button is specific to small screen sizes.
-      fields:
-        - name: aria
-          type: string
-          example: "This button will make it possible to interact with the search bar"
+    description: |
+      This button is specific to small screen sizes.
+    fields:
+      - name: aria
+        type: string
+        example: "This button will make it possible to interact with the search bar"
