@@ -4,8 +4,16 @@ theme: jekyll_patternbot
 patternbot:
   title: "Compendial"
   description: |
-    Your online source for everywhere skincare. We bring you the best the planet has to offer, one box— one country— at a time.
+    A global, subscription box resource for skincare. We bring you the best the planet has to offer, one box— one country— at a time.
   font_url: "https://fonts.googleapis.com/css?family=Roboto:400,700"
+
+  colors:
+    background: "--color-background"
+    sidebar: "--color-banners"
+    patterns:
+      brand.logos: "--color-background"
+      icons.icons: "--color-background"
+
   rationales:
     typefaces.primary: |
       Georgia was selected as the primary typeface for this site for its friendly typographic personality, and readability at a variety of sizes. It is also ideal for optimized loading times, and as such, appears in most content in the site.
