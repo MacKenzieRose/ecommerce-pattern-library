@@ -18,7 +18,7 @@ patternbot:
     typefaces.secondary: |
       Roboto was selected as the secondary typeface to juxtapose Georgia. As a sans-serif font, it is ideal for creating contrasting headers. Monowidth in design, it is also extremely readable at a variety of sizes.
     colors.primary: |
-      This primary color was chosen to for its extreme readability on the given background. As such, it is the basis for all font colours, and serves as the hover state in most instances for page elements.
+      This primary colors were chosen to for their extreme readability on the given backgrounds. As such, they are the basis for all segments of text content, and serve as the hover states in most instances for page elements.
     colors.accent: |
       These colors serve different functions. <br /> <br />
       Greyed text allows enough value contrast to be readable against the background, but does not distract from more important information on the page. It is ideal for, amongst other things, form placeholders. <br /> <br />
