@@ -10,6 +10,7 @@ patternbot:
   colors:
     background: "--color-background"
     sidebar: "--color-banners"
+    accent: "--color-accent"
 
   rationales:
     typefaces.primary: |
@@ -21,6 +22,6 @@ patternbot:
     colors.accent: |
       These colors serve different functions. <br /> <br />
       Greyed text allows enough value contrast to be readable against the background, but does not distract from more important information on the page. It is ideal for, amongst other things, form placeholders. <br /> <br />
-      Accent is used to draw attention to the most important calls-to-action on a page, and as such, is only found in particular button instances. <br /> <br />
+      Accent is used to draw attention to the most important calls-to-action on a page, and as such, is only found in particular button instances, and to highlight links. <br /> <br />
       Banners is used in headers and footers to create some subtle aethetic variation on the page, and more generally appeals to the target demographic of the site. It is still light enough to maintain readability of text. <br /> <br />
       Background serves as a base color for the page. It is also employed in hover states for maximal value contrast.
