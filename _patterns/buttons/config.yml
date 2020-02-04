@@ -81,9 +81,14 @@ patterns:
       - name: text
         type: string
         example: "Confirm & Pay"
-      - name: url
-        type: string
-        example: "#"
       - name: aria
         type: string
         example: "This button will submit your shipping and payment information"
+  icon:
+    title: "Search Icon"
+      description: |
+        This button is specific to small screen sizes.
+      fields:
+        - name: aria
+          type: string
+          example: "This button will make it possible to interact with the search bar"
