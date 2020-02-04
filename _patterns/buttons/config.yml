@@ -59,3 +59,17 @@ patterns:
       - name: aria
         type: string
         example: "This button will take you to the About Us page"
+  transparent:
+    title: "Transparent Button"
+    description: |
+      This button style is used for banner cards on top of photos. It should be used sparingly, given how finicky it is.
+    fields:
+      - name: text
+        type: string
+        example: "Shop now!"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button will take you to the Products page"

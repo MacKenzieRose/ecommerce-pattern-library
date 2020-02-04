@@ -42,3 +42,16 @@
   border-color: var(--color-primary-light);
   color: var(--color-primary-light);
 }
+
+.btn-transparent {
+  background: transparent no-repeat;
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+  background: var(--color-background);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
