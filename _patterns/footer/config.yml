@@ -1,0 +1,19 @@
+title: "Footer"
+description: |
+  This is a list of all the styles for the footer of the website.
+
+patterns:
+  social-icons:
+    title: "Social Icons"
+    description: |
+      These buttons are used to link to existing social media profiles in the footer of the website.
+    fields:
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button navigates you to our Facebook page"
+      - name: id
+        type: string
+        example: "facebook"
