@@ -20,21 +20,23 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+dl {
   font-family: var(--font-secondary);
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 a:hover,
 a:focus {
-  color: var(--color-accent);
+  color: var(--color-primary);
   transition: all .1s linear;
 }
 
-cite {
+cite,
+dl {
   color: var(--color-greyed-text);
 }
 
