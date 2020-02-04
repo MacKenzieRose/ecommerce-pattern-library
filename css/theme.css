@@ -22,3 +22,13 @@ h5,
 h6 {
   font-family: var(--font-secondary);
 }
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent);
+  transition: all .1s linear;
+}
