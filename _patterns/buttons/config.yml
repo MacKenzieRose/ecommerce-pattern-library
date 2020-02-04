@@ -1,0 +1,61 @@
+title: "Buttons"
+description: |
+  This is a list of all the styles of buttons that appear on the website.
+
+patterns:
+  basic:
+    title: "Basic Button"
+    description: |
+      This button is used on white backgrounds, and occassionally on website banners. It is the default button styling.
+    fields:
+      - name: text
+        type: string
+        example: "Shop now"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button links to the Products page"
+  accent:
+    title: "Accent Button"
+    description: |
+      This button is used on white backgrounds, and serves to draw attention to the most important call-to-action on a page.
+    fields:
+      - name: text
+        type: string
+        example: "Start now!"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button links to the Products page"
+  footer:
+    title: "Footer Button"
+    description: |
+      This button style is used exclusively in the footer of the site, to submit the email form.
+    fields:
+      - name: text
+        type: string
+        example: "Stay in touch"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button submits your email, so we can stay in touch via newsletter"
+  header:
+    title: "Header Button"
+    description: |
+      This button style is used for page navigation in the header at larger screen sizes.
+    fields:
+      - name: text
+        type: string
+        example: "About Us"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button will take you to the About Us page"
