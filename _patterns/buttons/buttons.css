@@ -1,39 +1,44 @@
-/* General button and header button stylings; change border radius for sharp edges*/
-.btn,
-.btn-header {
-  background-color: var(--color-background);
-  border-color: var(--color-greyed-text);
-  border-radius: 0;
-  color: var(--color-greyed-text);
-}
-
-/* General & footer buttons hover & focus states */
-.btn:hover,
-.btn:focus,
-.btn-footer:hover,
-.btn-footer:focus {
+/* General button styling; adjust border radius for sharp corners */
+.btn {
   background-color: var(--color-background);
   border-color: var(--color-primary);
   color: var(--color-primary);
+  border-radius: 0;
 }
 
-/* Remove border everywhere but the bottom for header buttons */
-.btn-header {
-  border-width: 0 0 2px;
-}
-
-/* Accent button styling */
 .btn-accent {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-background);
 }
 
-/* Footer button default state; accent button focus & hover states */
-.btn-footer,
+.btn-footer {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-banners);
+}
+
+/* General, accent, and footer buttons all have the same hover & focus state stylings */
+.btn:hover,
+.btn:focus,
 .btn-accent:hover,
-.btn-accent:focus {
+.btn-accent:focus,
+.btn-footer:hover,
+.btn-footer:focus  {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-background);
+}
+
+.btn-header {
+  border-color: var(--color-greyed-text);
+  border-width: 0 0 2px;
+  color: var(--color-greyed-text);
+}
+
+.btn-header:hover,
+.btn-header:focus {
+  background-color: var(--color-background);
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
 }
