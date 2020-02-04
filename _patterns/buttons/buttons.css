@@ -15,8 +15,6 @@
   background-color: var(--color-background);
   border-color: var(--color-primary);
   color: var(--color-primary);
-
-  transition: all .1s linear;
 }
 
 /* Remove border everywhere but the bottom for header buttons */
