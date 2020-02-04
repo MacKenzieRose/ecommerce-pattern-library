@@ -73,7 +73,7 @@ patterns:
   submit:
     title: "Submitting Forms Button"
     description: |
-      This button style is used to submit forms, like the checkout page.
+      This button style is used to submit forms, like the checkout page. It looks identical to the accent button, but is built differently.
     fields:
       - name: text
         type: string
