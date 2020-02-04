@@ -60,14 +60,14 @@
   color: var(--color-primary);
 }
 
-.btn-search-icon {
+.btn-icon {
   background-color: var(--color-banners);
   border-color: var(--color-banners);
   color: var(--color-primary-light);
 }
 
-.btn-search-icon:hover,
-.btn-searcg-icon:focus {
+.btn-icon:hover,
+.btn-icon:focus {
   background-color: var(--color-banners);
   border-color: var(--color-banners);
   color: var(--color-primary);

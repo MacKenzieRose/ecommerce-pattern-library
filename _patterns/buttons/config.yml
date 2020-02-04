@@ -87,8 +87,16 @@ patterns:
   search:
     title: "Search Icon"
     description: |
-      This button is specific to small screen sizes.
+      This button is specific to small screen sizes, and allows the user to view and interact with the search function.
     fields:
       - name: aria
         type: string
         example: "This button will make it possible to interact with the search bar"
+  hamburger:
+    title: "Collapsible Navigation"
+    description: |
+      This button is also specific to smaller screen sizes, and allows the user to view and interact with the site navigation menu.
+    fields:
+      - name: aria
+        type: string
+        example: "This button will make it possible to interact with the navigation"
