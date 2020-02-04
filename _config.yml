@@ -10,12 +10,17 @@ patternbot:
   colors:
     background: "--color-background"
     sidebar: "--color-banners"
-    patterns:
-      brand.logos: "--color-background"
-      icons.icons: "--color-background"
 
   rationales:
     typefaces.primary: |
       Georgia was selected as the primary typeface for this site for its friendly typographic personality, and readability at a variety of sizes. It is also ideal for optimized loading times, and as such, appears in most content in the site.
     typefaces.secondary: |
       Roboto was selected as the secondary typeface to juxtapose Georgia. As a sans-serif font, it is ideal for creating contrasting headers. Monowidth in design, it is also extremely readable at a variety of sizes.
+    colors.primary: |
+      This primary color was chosen to for its extreme readability on the given background. As such, it is the basis for all font colours, and serves as the hover state in most instances for page elements.
+    colors.accent: |
+      These colors serve different functions. <br /> <br />
+      Greyed text allows enough value contrast to be readable against the background, but does not distract from more important information on the page. It is ideal for, amongst other things, form placeholders. <br /> <br />
+      Accent is used to draw attention to the most important calls-to-action on a page, and as such, is only found in particular button instances. <br /> <br />
+      Banners is used in headers and footers to create some subtle aethetic variation on the page, and more generally appeals to the target demographic of the site. It is still light enough to maintain readability of text. <br /> <br />
+      Background serves as a base color for the page. It is also employed in hover states for maximal value contrast.
