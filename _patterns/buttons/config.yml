@@ -73,3 +73,17 @@ patterns:
       - name: aria
         type: string
         example: "This button will take you to the Products page"
+  submit:
+    title: "Submitting Forms Button"
+    description: |
+      This button style is used to submit forms, like the checkout page.
+    fields:
+      - name: text
+        type: string
+        example: "Confirm & Pay"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button will submit your shipping and payment information"
