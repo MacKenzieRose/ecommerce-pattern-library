@@ -39,9 +39,6 @@ patterns:
       - name: text
         type: string
         example: "Stay in touch"
-      - name: url
-        type: string
-        example: "#"
       - name: aria
         type: string
         example: "This button submits your email, so we can stay in touch via newsletter"
