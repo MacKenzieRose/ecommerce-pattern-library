@@ -1,7 +1,7 @@
 :root {
   --color-primary: #231f20;
-  --color-accent: #396a61;
   --color-greyed-text: #97929b;
+  --color-accent: #396a61;
   --color-banners: #fde9ea;
   --color-background: #fff;
 
@@ -11,6 +11,7 @@
 
 html {
   font-family: var(--font-primary);
+  color: var(--color-primary);
 }
 
 h1,
