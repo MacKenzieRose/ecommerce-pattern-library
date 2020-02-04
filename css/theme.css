@@ -1,5 +1,6 @@
 :root {
   --color-primary: #231f20;
+  --color-primary-light: #3d3841;
   --color-greyed-text: #97929b;
   --color-accent: #396a61;
   --color-banners: #fde9ea;
@@ -31,4 +32,13 @@ a:hover,
 a:focus {
   color: var(--color-accent);
   transition: all .1s linear;
+}
+
+cite {
+  color: var(--color-greyed-text);
+}
+
+mark {
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
