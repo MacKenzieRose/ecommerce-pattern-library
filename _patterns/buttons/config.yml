@@ -81,19 +81,14 @@ patterns:
       - name: aria
         type: string
         example: "This button will submit your shipping and payment information"
-  search:
-    title: "Search Icon"
+  show-hide:
+    title: "Hide & Show Buttons"
     description: |
-      This button is specific to small screen sizes, and allows the user to view and interact with the search function.
-    fields:
-      - name: aria
-        type: string
-        example: "This button will make it possible to interact with the search bar"
-  hamburger:
-    title: "Collapsible Navigation"
-    description: |
-      This button is also specific to smaller screen sizes, and allows the user to view and interact with the site navigation menu.
+      These types of buttons allow the user to view and interact with hidden content at smaller screen sizes.
     fields:
       - name: aria
         type: string
         example: "This button will make it possible to interact with the navigation"
+      - name: id
+        type: string
+        example: "hamburger"
