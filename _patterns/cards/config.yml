@@ -1,0 +1,22 @@
+title: "Cards"
+description: |
+  These are examples of all of the cards used on this website.
+
+patterns:
+  icon-card:
+    title: "Icon Card"
+    description: |
+      This is an example of an icon card; these are found on the landing page, and primarily function to help describe this service to potential customers. They do not link to anything.
+    fields:
+      - name: id
+        type: string
+        example: "facebook"
+      - name: header
+        type: string
+        example: "How it works"
+      - name: aria
+        type: string
+        example: "This is information about how purchases through our website work."
+      - name: text
+        type: string
+        example: "You want to try and improve your skincare routine. We want to help. With our service, you’ll receive the best the world has to offer in terms of skincare every month, shippedright to your home. It’s that easy."
