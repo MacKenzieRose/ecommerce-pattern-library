@@ -1,6 +1,6 @@
 title: "Cards"
 description: |
-  These are examples of all of the cards used on this website.
+  This is a list of all the styles of cards used on this website.
 
 patterns:
   icon-card:
@@ -20,3 +20,17 @@ patterns:
       - name: text
         type: string
         example: "You want to try and improve your skincare routine. We want to help. With our service, you’ll receive the best the world has to offer in terms of skincare every month, shippedright to your home. It’s that easy."
+  product-card:
+    title: "Product Card"
+    description: |
+      This button is used on white backgrounds, and serves to draw attention to the most important call-to-action on a page.
+    fields:
+      - name: text
+        type: string
+        example: "Start now!"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button links to the Products page"
