@@ -10,7 +10,7 @@ patterns:
     fields:
       - name: id
         type: string
-        example: "facebook"
+        example: "how-it-works"
       - name: header
         type: string
         example: "How it works"
