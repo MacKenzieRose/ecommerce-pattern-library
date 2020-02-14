@@ -1,0 +1,99 @@
+title: "Forms"
+description: |
+  This is a list of all the components of forms employed in this website.
+
+patterns:
+  text-input:
+    title: "Text Input"
+    description: |
+      This is an example of a default text-input field. They are required.
+    fields:
+      - name: label
+        type: string
+        example: "first-name"
+      - name: error
+        type: string
+        example: "first-name-error"
+      - name: text
+        type: string
+        example: "First Name"
+      - name: id
+        type: string
+        example: "error"
+      - name: icon-label
+        type: string
+        example: "Please provide your first name"
+  text-input-optional:
+    title: "Optional Text Input"
+    description: |
+      This is an example of an optional text-input field.
+    fields:
+      - name: label
+        type: string
+        example: "address-2"
+      - name: text
+        type: string
+        example: "Address Line 2"
+  email:
+    title: "Email Input"
+    description: |
+      This is an example of an email text-input field.
+    fields:
+      - name: label
+        type: string
+        example: "email"
+      - name: error
+        type: string
+        example: "email-error"
+      - name: text
+        type: string
+        example: "example@email.ca"
+      - name: id
+        type: string
+        example: "error"
+      - name: icon-label
+        type: string
+        example: "Please provide a valid email"
+  drop-down:
+    title: "Drop Down Selection"
+    description: |
+      This is an example of a default drop down menu. It is a required form element.
+    fields:
+      - name: label
+        type: string
+        example: "province"
+      - name: error
+        type: string
+        example: "province-error"
+      - name: text
+        type: string
+        example: "Province"
+      - name: id
+        type: string
+        example: "error"
+      - name: option-label
+        type: string
+        example: "Province"
+      - name: option
+        type: string
+        example: "Alberta"
+      - name: icon-label
+        type: string
+        example: "Please select your province of residence"
+  alert:
+    title: "Form Alert -Placeholder"
+    description: |
+      This is an example of an alert banner that will tell a user their form has not been submitted correctly
+    fields:
+      - name: role
+        type: string
+        example: "alert"
+      - name: aria-live
+        type: string
+        example: "assertive"
+      - name: id
+        type: string
+        example: "error"
+      - name: icon-label
+        type: string
+        example: "There are items that require your attention"
