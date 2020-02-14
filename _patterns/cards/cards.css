@@ -1,4 +1,5 @@
-.card {
+.card,
+.alternating-card {
   background-color: var(--color-background);
 }
 
@@ -9,6 +10,19 @@ hr {
 .embed-item {
   height: 100%;
   width: auto;
+}
+
+.right-embed-item {
+  height: 100%;
+  width: auto;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.alternating-card img {
+  height: 430px;
+  overflow: hidden;
 }
 
 .price {
