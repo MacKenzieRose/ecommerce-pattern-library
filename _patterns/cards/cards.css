@@ -1,11 +1,33 @@
 .card {
-  background-color: #fff;
-    border: 1px solid black;
+  background-color: var(--color-background);
 }
+
+hr {
+  border-color: var(--color-greyed-text);
+}
+
+.embed-item {
+  height: 100%;
+  width: auto;
+}
+
+.price {
+  color: var(--color-greyed-text);
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 25em) {
+
+    hr {
+      border-color: var(--color-background);
+    }
+
+}
+
 
 @media only screen and (min-width: 38em) {
 
-  .text-content {
+  .text-content > h2 {
     text-align: left;
   }
 
