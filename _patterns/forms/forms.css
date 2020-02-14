@@ -1,0 +1,49 @@
+.flag-optional {
+  color: var(--color-greyed-text);
+}
+
+.placeholder:not([type="checkbox"]),
+.placeholder:not([type="radio"]) {
+  color: var(--color-greyed-text);
+}
+
+select > option {
+  color: var(--color-primary);
+}
+
+.is-validated input:invalid,
+.is-validated select:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before,
+.is-validated input[type="radio"]:invalid + label::before,
+.is-validated input[type="number"]:invalid + label::before,
+.is-validated input[type="email"]:invalid + label::before,
+.is-validated input[type="tel"]:invalid + label::before,
+.is-validated:invalid,
+.is-validated[type="checkbox"]:invalid + label::before,
+.is-validated[type="radio"]:invalid + label::before,
+.is-validated[type="number"]:invalid + label::before,
+.is-validated[type="email"]:invalid + label::before,
+.is-validated[type="tel"]:invalid + label::before,
+.is-validated[type="password"]:invalid + label::before {
+  border-color: var(--color-alarm);
+}
+
+.error-message {
+  display: none;
+  color: var(--color-alarm);
+}
+
+.error-message-highlighted {
+  background-color: var(--color-alarm);
+  color: var(--color-background);
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message,
+.is-validated select:invalid + .error-message,
+.is-validated select:invalid + label + .error-message,
+.is-validated:invalid + .error-message,
+.is-validated:invalid + label + .error-message {
+  display: block;
+}
