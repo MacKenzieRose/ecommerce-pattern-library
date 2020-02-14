@@ -25,6 +25,10 @@ hr {
   overflow: hidden;
 }
 
+.grey-bkg {
+  background-color: var(--color-greyed-text);
+}
+
 .price {
   color: var(--color-greyed-text);
   font-weight: 400;
