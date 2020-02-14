@@ -36,6 +36,10 @@ a:focus {
   transition: all .1s linear;
 }
 
+.btn {
+  text-align: center;
+}
+
 cite,
 dl {
   color: var(--color-greyed-text);
