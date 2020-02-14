@@ -15,6 +15,7 @@ patternbot:
       brand.logo: "--color-primary"
       cards.icon-card: "--color-banners"
       cards.product-card: "--color-banners"
+      cards.image-card: "--color-banners"
 
   rationales:
     typefaces.primary: |
