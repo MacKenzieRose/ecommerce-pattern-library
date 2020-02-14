@@ -23,14 +23,23 @@ patterns:
   product-card:
     title: "Product Card"
     description: |
-      This button is used on white backgrounds, and serves to draw attention to the most important call-to-action on a page.
+      This card is used to list products in an organized fashion on the product page.
     fields:
-      - name: text
-        type: string
-        example: "Start now!"
-      - name: url
-        type: string
-        example: "#"
       - name: aria
         type: string
-        example: "This button links to the Products page"
+        example: "This is a product card, featuring this month's product offerings"
+      - name: image-file
+        type: string
+        example: "caffeine.jpg"
+      - name: alt-text
+        type: string
+        example: "This is a photo of the Japan subscription box, featuring caffeined eye drops"
+      - name: header
+        type: string
+        example: "This month: Japan"
+      - name: cost
+        type: string
+        example: "$55.00"
+      - name: text
+        type: string
+        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more. "
