@@ -1,0 +1,16 @@
+<div>
+  <label class="visually-hidden" for="{{include.label}}">{{include.text}}</label>
+  <select name="{{include.label}}" id="{{include.label}}" class="placeholder" required aria-describedby="{{include.error}}">
+    <option disabled selected>{{include.option-label}}</option>
+    <option>{{include.option}}</option>
+    <option>{{include.option}}</option>
+    <option>{{include.option}}</option>
+    <option>{{include.option}}</option>
+    <option>{{include.option}}</option>
+    <option>{{include.option}}</option>
+  </select>
+  <p class="error-message pad-t-1-4 push-0" id="{{include.error}}">
+    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#{{include.id}}"</svg></i>
+    <span class="icon-label">{{include.icon-label}}</span>
+  </p>
+</div>
