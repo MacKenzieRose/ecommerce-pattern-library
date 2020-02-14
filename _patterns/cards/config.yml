@@ -42,4 +42,24 @@ patterns:
         example: "$55.00"
       - name: text
         type: string
+        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more."
+  image-card:
+    title: "Alternating Image Cards"
+    description: |
+      This card is used to further advertise products on the homepage, but only appears at larger screen sizes.
+    fields:
+      - name: aria
+        type: string
+        example: "This is an image card, featuring products and sales on the homepage"
+      - name: header
+        type: string
+        example: "This month: Japan"
+      - name: text
+        type: string
         example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more. "
+      - name: image-file
+        type: string
+        example: "caffeine.jpg"
+      - name: alt-text
+        type: string
+        example: "This is a photo of the Japan subscription box, featuring caffeined eye drops"
