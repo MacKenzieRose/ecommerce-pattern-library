@@ -31,9 +31,6 @@ patterns:
       - name: image-file
         type: string
         example: "caffeine.jpg"
-      - name: alt-text
-        type: string
-        example: "This is a photo of the Japan subscription box, featuring caffeined eye drops"
       - name: header
         type: string
         example: "This month: Japan"
