@@ -27,7 +27,7 @@ hr {
 
 .price {
   color: var(--color-greyed-text);
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .cover {
