@@ -1,8 +1,8 @@
 .icon-color {
-  color: var(--color-primary-light)
+  color: var(--color-primary-light);
 }
 
 .icon-color:hover,
 .icon-color:focus {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
