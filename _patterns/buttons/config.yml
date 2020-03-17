@@ -56,6 +56,20 @@ patterns:
       - name: aria
         type: string
         example: "This button will take you to the About Us page"
+  edit:
+    title: "Edit Selection Button"
+    description: |
+      This button style is used to edit product selections in a user's cart.
+    fields:
+      - name: text
+        type: string
+        example: "Edit Selection"
+      - name: url
+        type: string
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button will take you to the Product page"
   transparent:
     title: "Transparent Button"
     description: |
