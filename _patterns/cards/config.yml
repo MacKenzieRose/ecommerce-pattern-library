@@ -19,7 +19,7 @@ patterns:
         example: "This is information about how purchases through our website work."
       - name: text
         type: string
-        example: "You want to try and improve your skincare routine. We want to help. With our service, you’ll receive the best the world has to offer in terms of skincare every month, shippedright to your home. It’s that easy."
+        example: "You want to try and improve your skincare routine. We want to help. With our service, you’ll receive the best the world has to offer in terms of skincare every month, shipped right to your home. It’s that easy."
   product-card:
     title: "Product Card"
     description: |
@@ -57,3 +57,32 @@ patterns:
       - name: image-file
         type: string
         example: "caffeine.jpg"
+  checkout-card:
+    title: "Checkout Card"
+    description: |
+      This card is used to list products a user has placed into their cart for purchase.
+    fields:
+      - name: aria
+        type: string
+        example: "This is a product card, featuring this month's product offerings"
+      - name: id
+        type: string
+        example: "close"
+      - name: image-file
+        type: string
+        example: "caffeine.jpg"
+      - name: header
+        type: string
+        example: "This month: Japan"
+      - name: cost
+        type: string
+        example: "$55.00"
+      - name: text
+        type: string
+        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more."
+      - name: option
+        type: string
+        example: "Avocado-free"
+      - name: quantity
+        type: integer
+        example: 1
