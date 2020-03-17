@@ -30,14 +30,17 @@ hr {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 25em) {
-
-    hr {
-      border-color: var(--color-background);
-    }
-
+.cover {
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
+.add-space {
+  top: .75rem;
+  right: .75rem;
+}
 
 @media only screen and (min-width: 38em) {
 
