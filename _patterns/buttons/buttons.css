@@ -28,7 +28,7 @@
 .btn-form-submit:hover,
 .btn-form-submit:focus,
 .btn-footer:hover,
-.btn-footer:focus  {
+.btn-footer:focus {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-background);
