@@ -34,10 +34,10 @@ patternbot:
       Accent is used to draw attention to the most important calls-to-action on a page, and as such, is only found in particular button instances, and to highlight links.
 
 
-      Banners is used in headers and footers to create some subtle aethetic variation on the page, and more generally appeals to the target demographic of the site. It is still light enough to maintain readability of text.
+      Banners is used in headers and footers to create some subtle aesthetic variation on the page, and more generally appeals to the target demographic of the site. It is still light enough to maintain readability of text.
 
 
-      Background serves as a base color for the page. It is also employed in hover states for maximal value contrast.
+      Background serves as a base colour for the page. It is also employed in hover states for maximal value contrast.
 
 
       Alarm is the colour used to indicate page errors, such as incomplete form fields.
