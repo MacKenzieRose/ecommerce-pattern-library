@@ -1,0 +1,9 @@
+title: "Header"
+description: |
+  This is a list of all the styles for the header of the website.
+
+patterns:
+  header:
+    title: "Site Hooter"
+    description: |
+      This is the header of the website.
