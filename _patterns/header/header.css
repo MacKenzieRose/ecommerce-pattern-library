@@ -1,0 +1,8 @@
+.pink {
+  background-color: var(--color-banners);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
