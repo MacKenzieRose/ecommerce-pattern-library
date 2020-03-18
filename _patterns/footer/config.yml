@@ -17,3 +17,7 @@ patterns:
       - name: id
         type: string
         example: "facebook"
+  footer:
+    title: "Site Footer"
+    description: |
+      This is the footer of the website.

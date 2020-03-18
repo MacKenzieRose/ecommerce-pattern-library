@@ -1,8 +1,17 @@
-.icon-color {
+.pink {
+  background-color: var(--color-banners);
+}
+
+a {
   color: var(--color-primary-light);
 }
 
-.icon-color:hover,
-.icon-color:focus {
+a:hover,
+a:focus {
   color: var(--color-primary);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
