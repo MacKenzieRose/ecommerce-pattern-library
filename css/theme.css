@@ -26,6 +26,17 @@ dl {
   font-family: var(--font-secondary);
 }
 
+input,
+option,
+select,
+.btn {
+  font-family: var(--font-secondary);
+}
+
+input {
+  border-color: var(--color-primary-light);
+}
+
 a {
   color: var(--color-accent);
 }
