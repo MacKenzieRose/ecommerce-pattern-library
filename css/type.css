@@ -232,7 +232,6 @@ h5,
 
 h6,
 .kilo,
-input,
 textarea {
   font-size: 1rem;
   line-height: 1.3rem;
@@ -244,7 +243,11 @@ small,
   line-height: 1.3rem;
 }
 
-.micro {
+.micro,
+input,
+option,
+select,
+button {
   font-size: .8784rem;
   line-height: 1.3rem;
 }
@@ -270,7 +273,7 @@ ol {
 input,
 option,
 select {
-  height: calc(1.3rem + .1625rem + .1625rem);
+  height: calc(1.35rem + .1625rem + .1625rem);
 }
 
 [type="color"] {
@@ -627,7 +630,6 @@ legend {
 
   h6,
   .kilo,
-  input,
   textarea {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -639,7 +641,11 @@ legend {
     line-height: 1.4rem;
   }
 
-  .micro {
+  .micro,
+  input,
+  option,
+  select,
+  button {
     font-size: .7901rem;
     line-height: 1.4rem;
   }
@@ -1044,7 +1050,6 @@ legend {
 
   h6,
   .kilo,
-  input,
   textarea {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1056,7 +1061,11 @@ legend {
     line-height: 1.5rem;
   }
 
-  .micro {
+  .micro,
+  input,
+  option,
+  select,
+  button {
     font-size: .7901rem;
     line-height: 1.5rem;
   }
@@ -1102,7 +1111,7 @@ legend {
   input,
   option,
   select {
-    height: calc(1.5rem + .1875rem + .1875rem);
+    height: calc(1.45rem + .1875rem + .1875rem);
   }
 
   [type="color"] {
@@ -1461,7 +1470,6 @@ legend {
 
   h6,
   .kilo,
-  input,
   textarea {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1473,7 +1481,11 @@ legend {
     line-height: 1.5rem;
   }
 
-  .micro {
+  .micro,
+  input,
+  option,
+  select,
+  button {
     font-size: .7901rem;
     line-height: 1.5rem;
   }
@@ -1519,7 +1531,7 @@ legend {
   input,
   option,
   select {
-    height: calc(1.5rem + .1875rem + .1875rem);
+    height: calc(1.4rem + .1875rem + .1875rem);
   }
 
   [type="color"] {
