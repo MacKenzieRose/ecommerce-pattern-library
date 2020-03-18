@@ -26,7 +26,7 @@ patterns:
   text-input-optional:
     title: "Optional Text Input"
     description: |
-      This is an example of an optional text-input field.
+      This is an example of an optional text-input field. Although it looks identical to the default text field, it will result in no errors if not filled out.
     fields:
       - name: label
         type: string
@@ -80,20 +80,25 @@ patterns:
       - name: icon-label
         type: string
         example: "Please select your province of residence"
-  alert:
-    title: "Form Alert -Placeholder"
+  search-bar:
+    title: "Search Bar Form"
     description: |
-      This is an example of an alert banner that will tell a user their form has not been submitted correctly
+      This is used for completing a sitewide search, and incorporates the sitewide search submit button.
     fields:
-      - name: role
+      - name: name
         type: string
-        example: "alert"
-      - name: aria-live
+        example: "search"
+      - name: label
         type: string
-        example: "assertive"
-      - name: id
+        example: "search-input"
+      - name: text
         type: string
-        example: "error"
-      - name: icon-label
+        example: "Search"
+  contact:
+    title: "Contact Form"
+    description: |
+      This is the contact form that appears in the footer of the site
+    fields:
+      - name: method
         type: string
-        example: "There are items that require your attention"
+        example: "POST"
