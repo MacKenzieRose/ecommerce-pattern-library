@@ -42,3 +42,7 @@ patternbot:
 
 
       Alarm is the colour used to indicate page errors, such as incomplete form fields.
+
+  layouts:
+    default: |
+      The default layout contains the standard header and footer for the website, as well as the general metadata, links, and scripts required to run the site.
