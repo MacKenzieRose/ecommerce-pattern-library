@@ -31,17 +31,6 @@ patterns:
       - name: aria
         type: string
         example: "This button links to the Products page"
-  footer:
-    title: "Footer Button"
-    description: |
-      This button style is used exclusively in the footer of the site, to submit the email form.
-    fields:
-      - name: text
-        type: string
-        example: "Stay in touch"
-      - name: aria
-        type: string
-        example: "This button submits your email, so we can stay in touch via newsletter"
   header:
     title: "Header Button"
     description: |
@@ -95,6 +84,28 @@ patterns:
       - name: aria
         type: string
         example: "This button will submit your shipping and payment information"
+  contact-submit:
+    title: "Submitting Contact Form Button"
+    description: |
+      This button style is used to submit the contact form, found in the footer.
+    fields:
+      - name: text
+        type: string
+        example: "Stay in Touch"
+      - name: aria
+        type: string
+        example: "This button submits your email, so we can stay in touch via newsletter"
+  search:
+    title: "Sitewide Search Submit Button"
+    description: |
+      This button style is used to submit the sitewide search form, found in the header.
+    fields:
+      - name: aria
+        type: string
+        example: "This button will submit your search"
+      - name: id
+        type: string
+        example: "search"
   show-hide:
     title: "Hide & Show Buttons"
     description: |
