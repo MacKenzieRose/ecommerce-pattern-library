@@ -4,6 +4,10 @@ description: |
 
 patterns:
   header:
-    title: "Site Hooter"
+    title: "Site Header"
     description: |
       This is the header of the website.
+    fields:
+      - name: test
+        type: string
+        example: "TEEST"
