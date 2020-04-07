@@ -46,3 +46,15 @@ patternbot:
   layouts:
     default: |
       The default layout contains the standard header and footer for the website, as well as the general metadata, links, and scripts required to run the site.
+    product: |
+      The product layout contains the default layout's content, as well as the basis for product promotion content.
+
+collections:
+  products:
+    output: true
+
+defaults:
+  - scope:
+      path: _products
+    values:
+      layout: product
