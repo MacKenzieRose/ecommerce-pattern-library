@@ -12,7 +12,7 @@ patterns:
         type: string
         example: "Shop now"
       - name: url
-        type: string
+        type: url
         example: "#"
       - name: aria
         type: string
@@ -26,7 +26,7 @@ patterns:
         type: string
         example: "Start now!"
       - name: url
-        type: string
+        type: url
         example: "#"
       - name: aria
         type: string
@@ -54,7 +54,7 @@ patterns:
         type: string
         example: "Edit Selection"
       - name: url
-        type: string
+        type: url
         example: "#"
       - name: aria
         type: string
@@ -68,7 +68,7 @@ patterns:
         type: string
         example: "Shop now!"
       - name: url
-        type: string
+        type: url
         example: "#"
       - name: aria
         type: string
@@ -117,3 +117,17 @@ patterns:
       - name: id
         type: string
         example: "hamburger"
+  social-icons:
+    title: "Social Icons"
+    description: |
+      These buttons are used to link to existing social media profiles in the footer of the website.
+    fields:
+      - name: url
+        type: url
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button navigates you to our Facebook page"
+      - name: id
+        type: string
+        example: "facebook"
