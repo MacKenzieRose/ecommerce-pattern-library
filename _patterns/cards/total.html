@@ -1,0 +1,32 @@
+<div class="unit [ xs-1 s-1 m-1 l-1-3 xl-1-3 ] pad-t-2 white">
+  <div class="gutter-1-2">
+    <hr class="push-0">
+  </div>
+  <div class="max-length pad-t gutter-1-2">
+    <table class="push-0" id="cart-total" tabindex="0">
+      <caption class="bold not-italic giga push-1-2">Order Summary</caption>
+      <tbody>
+        <tr>
+          <th scope="row" class="not-bold">Subtotal</th>
+          <td>${{include.subtotal}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="not-bold">Shipping</th>
+          <td>${{include.shipping}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="not-bold">Taxes</th>
+          <td>${{include.taxes}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="not-bold">Discounts</th>
+          <td>${{include.discounts}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="total">Total</th>
+          <td class="bold total">${{include.total}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
