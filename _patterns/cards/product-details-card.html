@@ -1,0 +1,50 @@
+<div class="wrapper white" aria_label="{{include.data.aria_label}}">
+  <h1 class="center-text pad-t gutter-1-2 push-0 nina">{{include.data.h1}}</h1>
+  <div class="gutter-1-2 pad-t pad-b">
+    <hr class="push-0">
+  </div>
+  <div class="grid">
+    <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] island-1-2">
+      <div class="embed embed-1by1 push-1-2">
+        <img class="embed-item" src="{{include.data.image}}" alt="">
+      </div>
+    </div>
+    <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-2">
+      <h2 class="push-0">{{include.data.name}}</h2>
+      <h3 class="price giga">${{include.data.price}}</h3>
+      <p>{{include.data.description}}</p>
+
+      <form method="{{include.method}}">
+        <fieldset class="push-0">
+          <legend class="visually-hidden pad-t not-bold giga gutter-1-2">Box Customization Options</legend>
+          <div class="grid">
+            <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 xl-2-3 ] push-1-2">
+              {% pattern forms/drop-down-optional label="options" text="Options:" option-label="Default Box" option1="Paraben-free" option="option" option2="Avocado-free" option3="Comeodogenic Only" %}
+            </div>
+            <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 xl-2-3 ]">
+              {% pattern forms/quantity label="quantity" text="Quantity:" %}
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="push-0">
+          <legend class="visually-hidden pad-t not-bold giga gutter-1-2">Subscription Options</legend>
+          <div class="grid">
+            <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 xl-2-3 ] push-1-2">
+              {% pattern forms/drop-down-optional label="options" text="Options:" option-label="Default Box" option1="Paraben-free" option="option" option2="Avocado-free" option3="Comeodogenic Only" %}
+            </div>
+            <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 xl-2-3 ]">
+              {% pattern forms/quantity label="quantity" text="Quantity:" %}
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="grid text-center">
+          <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] pad-t-2 pad-b-2">
+            {% pattern buttons/submit text="Add to Cart" aria="This button will add your selection to your cart." %}
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
