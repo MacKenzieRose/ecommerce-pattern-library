@@ -6,8 +6,4 @@ patterns:
   header:
     title: "Site Header"
     description: |
-      This is the header of the website.
-    fields:
-      - name: test
-        type: string
-        example: "TEEST"
+      This is the main header of the website. Ideally, it would have incorporated JavaSript and not have been built so shoddily, but here we are.

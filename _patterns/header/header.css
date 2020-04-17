@@ -1,3 +1,4 @@
+/* Multi-asset styles */
 .pink {
   background-color: var(--color-banners);
 }
@@ -5,4 +6,82 @@
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+/* Style current navigation page markers */
+.current .btn {
+  border-color: var(--color-primary-light);
+  border-bottom-width: 3px;
+  color: var(--color-primary-light);
+}
+
+/* Bring toggle nav to the front */
+.top {
+  z-index: 5000;
+}
+
+
+/* Style toggle nav hover states */
+.btn-icon {
+  background-color: var(--color-banners);
+  border-color: var(--color-banners);
+  color: var(--color-primary-light);
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: var(--color-banners);
+  border-color: var(--color-banners);
+  color: var(--color-primary);
+}
+
+/* Style small screen drop-down menu */
+.nav {
+  display: none;
+}
+
+[type="checkbox"].nav-check + label::before {
+  position: absolute;
+  top: -10em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .close {
+  display: inline-block;
+}
+
+/* Style medium and large screen page navigations */
+@media only screen and (min-width: 38em) {
+
+  .nav-check:checked ~ .nav {
+    display: flex;
+  }
+
+  label.nav-label {
+    display: none;
+  }
+
+  .list-group {
+    display: flex;
+  }
+
+  .list-group li {
+    width: 25%;
+  }
+
 }

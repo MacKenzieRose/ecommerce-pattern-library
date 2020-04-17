@@ -1,8 +1,81 @@
-<div class="pink">
-  <h2>{{include.test}}</h2>
-  <div class="grid grid-middle pad-t pad-b wrapper">
-    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 xl-1-2 ] gutter-1-2 push">
-      {% pattern forms/contact method="POST" %}
+<header>
+  <nav role="navigation" id="nav">
+    <div class="grid wrapper flex relative">
+      <div class="unit [ xs-1 s-1 m-0 l-0 xl-0 ] top">
+        <input type="checkbox" id="nav-check" class="nav-check">
+        <label class="nav-label island-1-2 btn btn-icon" for="nav-check">
+          <i class="icon i-18 open" tabindex="0">
+            <svg>
+              <use xlink:href="/images/icons.svg#hamburger"></use>
+            </svg>
+          </i>
+          <i class="icon i-18 close" tabindex="0" aria-label="This button opens the dropdown navigation">
+            <svg>
+              <use xlink:href="/images/icons.svg#close" aria-label="This button closes the dropdown navigation"></use>
+            </svg>
+          </i>
+        </label>
+        <ul class="nav list-group gutter-1-2 wrapper">
+          <li class="{% if page.highlight_nav == 'about' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="About Us" url="#" aria="This button will take you to the About Us page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'products' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Products" url="/products/" aria="This button will take you to the Products page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'profile' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Log In" url="#" aria="This button will take you to the User Profile page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'checkout' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Cart" url="/checkout/" aria="This button will take you to the Checkout page" %}
+          </li>
+        </ul>
+      </div>
+      <div class="unit [ xs-1 s-1 m-0 l-0 xl-0 ] pin-rt absolute">
+        <div class="grid relative pad-b-1-4 pink wrapper">
+          <div class="class unit [ xs-1-4 s-1-4 m-0 l-0 xl-0 ]">
+          </div>
+          <div class="unit [ xs-1-2 s-1-2 m-0 l-0 xl-0 ] relative" tabindex="0">
+            <a class="pin-c absolute " href="/index/">
+              <img class="img-flex" src="/images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="unit [ xs-1-4 s-1-4 m-0 l-0 xl-0 ] island-1-2 text-right" tabindex="0">
+            <i class="icon i-20" id="search">
+              <svg>
+                <use xlink:href="/images/icons.svg#search"></use>
+              </svg>
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit [ xs-0 s-0 m-1-3 l-1-3 xl-1-3 ] gutter-1-2 pad-t-1-2 pad-b-1-2 pink">
+      </div>
+      <div class="unit [ xs-0 s-0 m-1-3 l-1-3 xl-1-3 ] relative gutter-1-2 pink" tabindex="0">
+        <a href="/index/">
+          <img class="img-flex gutter-2 island-1-2 absolute pin-c" src="/images/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="unit [ xs-0 s-0 m-1-3 l-1-3 xl-1-3 ] gutter-1-2 pad-t-1-2 pad-b-1-2 pink">
+        {% pattern forms/search-bar name="search" label="search-input" text="Search" %}
+      </div>
+
+      <div class="unit [ xs-0 s-0 m-1 l-1 xl-1 ]">
+        <ul class="nav list-group gutter-1-2 wrapper push-0">
+          <li class="{% if page.highlight_nav == 'about' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="About Us" url="#" aria="This button will take you to the About Us page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'products' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Products" url="/products/" aria="This button will take you to the Products page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'profile' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Log In" url="#" aria="This button will take you to the User Profile page" %}
+          </li>
+          <li class="{% if page.highlight_nav == 'checkout' %}current{% endif %}" tabindex="0">
+            {% pattern buttons/header text="Cart" url="/checkout/" aria="This button will take you to the Checkout page" %}
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
+</header>
