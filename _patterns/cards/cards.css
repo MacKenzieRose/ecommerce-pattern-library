@@ -1,6 +1,13 @@
 .card,
-.alternating-card {
+.alternating-card,
+.white {
   background-color: var(--color-background);
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.03);
 }
 
 hr {
@@ -40,6 +47,20 @@ hr {
 .add-space {
   top: .75rem;
   right: .75rem;
+}
+
+.total {
+  color: var(--color-primary);
+  padding-bottom: 0;
+}
+
+th,
+td {
+  border-bottom: 0;
+}
+
+.transparent-white {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (min-width: 38em) {
