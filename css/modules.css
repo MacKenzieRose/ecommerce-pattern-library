@@ -867,7 +867,7 @@ select {
 
 [type="checkbox"]:focus + label::before {
   outline: 3px solid #000;
-  z-index: 1000;
+  z-index: 6000;
 }
 
 [type="radio"] + label::before {
