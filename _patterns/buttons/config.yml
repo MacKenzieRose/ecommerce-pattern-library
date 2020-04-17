@@ -3,24 +3,11 @@ description: |
   This is a list of all the styles of buttons that appear on the website.
 
 patterns:
-  basic:
-    title: "Basic Button"
-    description: |
-      This button is used on white backgrounds, and occassionally on website banners. It is the default button styling.
-    fields:
-      - name: text
-        type: string
-        example: "Shop now"
-      - name: url
-        type: url
-        example: "#"
-      - name: aria
-        type: string
-        example: "This button links to the Products page"
   accent:
     title: "Accent Button"
     description: |
       This button is used on white backgrounds, and serves to draw attention to the most important call-to-action on a page.
+    width: 10em
     fields:
       - name: text
         type: string
@@ -31,20 +18,32 @@ patterns:
       - name: aria
         type: string
         example: "This button links to the Products page"
-  header:
-    title: "Header Button"
+  basic:
+    title: "Basic Button"
     description: |
-      This button style is used for page navigation in the header at larger screen sizes.
+      This button is used on white backgrounds, and occassionally on website banners. It is the default button styling.
+    width: 10em
     fields:
       - name: text
         type: string
-        example: "About Us"
+        example: "Shop now"
       - name: url
-        type: string
+        type: url
         example: "#"
       - name: aria
         type: string
-        example: "This button will take you to the About Us page"
+        example: "This button links to the Products page"
+  contact-submit:
+    title: "Submitting Contact Form Button"
+    description: |
+      This button style is used to submit the contact form, found in the footer.
+    fields:
+      - name: text
+        type: string
+        example: "Stay in Touch"
+      - name: aria
+        type: string
+        example: "This button submits your email, so we can stay in touch via newsletter"
   edit:
     title: "Edit Selection Button"
     description: |
@@ -59,42 +58,37 @@ patterns:
       - name: aria
         type: string
         example: "This button will take you to the Product page"
-  transparent:
-    title: "Transparent Button"
+  footer-links:
+    title: "Footer Links"
     description: |
-      This button style is used for banner cards on top of photos. It should be used sparingly, given how finicky it is.
+      These text links are used in the footer to link to other pages on the site that are of a lower priority than those found in the header.
     fields:
-      - name: text
-        type: string
-        example: "Shop now!"
       - name: url
         type: url
         example: "#"
       - name: aria
         type: string
-        example: "This button will take you to the Products page"
-  submit:
-    title: "Submitting Forms Button"
+        example: "This button navigates you to our FAQ page"
+      - name: id
+        type: string
+        example: "faq"
+      - name: text
+        type: string
+        example: "FAQ"
+  header:
+    title: "Header Button"
     description: |
-      This button style is used to submit forms, like the checkout page. It looks identical to the accent button, but is built differently.
+      This button style is used for page navigation in the header at larger screen sizes.
     fields:
       - name: text
         type: string
-        example: "Confirm & Pay"
+        example: "About Us"
+      - name: url
+        type: url
+        example: "#"
       - name: aria
         type: string
-        example: "This button will submit your shipping and payment information"
-  contact-submit:
-    title: "Submitting Contact Form Button"
-    description: |
-      This button style is used to submit the contact form, found in the footer.
-    fields:
-      - name: text
-        type: string
-        example: "Stay in Touch"
-      - name: aria
-        type: string
-        example: "This button submits your email, so we can stay in touch via newsletter"
+        example: "This button will take you to the About Us page"
   search:
     title: "Sitewide Search Submit Button"
     description: |
@@ -106,17 +100,6 @@ patterns:
       - name: id
         type: string
         example: "search"
-  show-hide:
-    title: "Hide & Show Buttons"
-    description: |
-      These types of buttons allow the user to view and interact with hidden content at smaller screen sizes.
-    fields:
-      - name: aria
-        type: string
-        example: "This button will make it possible to interact with the navigation"
-      - name: id
-        type: string
-        example: "hamburger"
   social-icons:
     title: "Social Icons"
     description: |
@@ -131,3 +114,30 @@ patterns:
       - name: id
         type: string
         example: "facebook"
+  submit:
+    title: "Submitting Forms Button"
+    description: |
+      This button style is used to submit forms, like the checkout page. It looks identical to the accent button, but is built differently.
+    width: 15em
+    fields:
+      - name: text
+        type: string
+        example: "Confirm & Pay"
+      - name: aria
+        type: string
+        example: "This button will submit your shipping and payment information"
+  transparent:
+    title: "Transparent Button"
+    description: |
+      This button style is used for banner cards on top of photos. It should be used sparingly, given how finicky it is.
+    width: 10em
+    fields:
+      - name: text
+        type: string
+        example: "Shop now!"
+      - name: url
+        type: url
+        example: "#"
+      - name: aria
+        type: string
+        example: "This button will take you to the Products page"
