@@ -6,6 +6,15 @@
   border-radius: 0;
 }
 
+/*Style width of certain buttons to fill unit divs */
+.btn-accent,
+.btn-basic,
+.btn-form-submit,
+.btn-transparent,
+.btn-header {
+  width: 100%;
+}
+
 /* Style both accent and form submission buttons */
 .btn-accent,
 .btn-form-submit {
@@ -33,6 +42,11 @@
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-background);
+}
+
+/* Adjust border for header search form button */
+.border-2px {
+  border-width: 2px;
 }
 
 .btn-header {
@@ -65,20 +79,7 @@
 
 .btn-transparent:hover,
 .btn-transparent:focus {
-  background: var(--color-background);
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
-.btn-icon {
-  background-color: var(--color-banners);
-  border-color: var(--color-banners);
-  color: var(--color-primary-light);
-}
-
-.btn-icon:hover,
-.btn-icon:focus {
-  background-color: var(--color-banners);
-  border-color: var(--color-banners);
-  color: var(--color-primary);
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-background);
 }
