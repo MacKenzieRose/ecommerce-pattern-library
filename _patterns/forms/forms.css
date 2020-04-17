@@ -47,6 +47,7 @@ select > option {
 }
 
 .is-validated > .error-message:first-child,
+.is-validated > fieldset > .error-message,
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message,
 .is-validated select:invalid + .error-message,
@@ -54,4 +55,12 @@ select > option {
 .is-validated:invalid + .error-message,
 .is-validated:invalid + label + .error-message {
   display: block;
+}
+
+fieldset {
+  border: 0;
+}
+
+.radio {
+  border: 2px solid var(--color-primary);
 }
