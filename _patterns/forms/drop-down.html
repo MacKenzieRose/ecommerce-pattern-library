@@ -2,15 +2,22 @@
   <label class="visually-hidden" for="{{include.label}}">{{include.text}}</label>
   <select name="{{include.label}}" id="{{include.label}}" class="placeholder" required aria-describedby="{{include.error}}">
     <option disabled selected>{{include.option-label}}</option>
-    <option>{{include.option}}</option>
-    <option>{{include.option}}</option>
-    <option>{{include.option}}</option>
-    <option>{{include.option}}</option>
-    <option>{{include.option}}</option>
-    <option>{{include.option}}</option>
+    <option>{{include.option1}}</option>
+    <{{include.option}}>{{include.option2}}</{{include.option}}>
+    <{{include.option}}>{{include.option3}}</{{include.option}}>
+    <{{include.option}}>{{include.option4}}</{{include.option}}>
+    <{{include.option}}>{{include.option5}}</{{include.option}}>
+    <{{include.option}}>{{include.option6}}</{{include.option}}>
+    <{{include.option}}>{{include.option7}}</{{include.option}}>
+    <{{include.option}}>{{include.option8}}</{{include.option}}>
+    <{{include.option}}>{{include.option9}}</{{include.option}}>
+    <{{include.option}}>{{include.option10}}</{{include.option}}>
+    <{{include.option}}>{{include.option11}}</{{include.option}}>
+    <{{include.option}}>{{include.option12}}</{{include.option}}>
+    <{{include.option}}>{{include.option13}}</{{include.option}}>
   </select>
   <p class="error-message pad-t-1-4 push-0" id="{{include.error}}">
-    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#{{include.id}}"</svg></i>
+    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#error"</svg></i>
     <span class="icon-label">{{include.icon-label}}</span>
   </p>
 </div>
