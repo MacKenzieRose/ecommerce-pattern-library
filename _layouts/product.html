@@ -1,7 +1,9 @@
 ---
 layout: default
+highlight_nav: {{page.highlight_nav}}
 ---
-
-<h1>{{page.name}}</h1>
-<p>{{page.description}}</p>
-<img src="{{page.image}}" alt="">
+<main role="main" id="main" tabindex="0">
+  <section>
+    {% pattern cards/product-details-card data=page %}
+  </section>
+</main>
