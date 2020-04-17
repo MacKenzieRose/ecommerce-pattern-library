@@ -22,14 +22,14 @@ h3,
 h4,
 h5,
 h6,
-dl {
-  font-family: var(--font-secondary);
-}
-
+dl,
 input,
 option,
+label,
 select,
-.btn {
+.btn,
+table,
+legend {
   font-family: var(--font-secondary);
 }
 
@@ -44,6 +44,7 @@ a {
 a:hover,
 a:focus {
   color: var(--color-primary);
+  z-index: 5000;
   transition: all .1s linear;
 }
 
@@ -52,7 +53,9 @@ a:focus {
 }
 
 cite,
-dl {
+dl,
+tr,
+label {
   color: var(--color-greyed-text);
 }
 
