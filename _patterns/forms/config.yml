@@ -17,9 +17,6 @@ patterns:
       - name: text
         type: string
         example: "First Name"
-      - name: id
-        type: string
-        example: "error"
       - name: icon-label
         type: string
         example: "Please provide your first name"
@@ -48,9 +45,6 @@ patterns:
       - name: text
         type: string
         example: "example@email.ca"
-      - name: id
-        type: string
-        example: "error"
       - name: icon-label
         type: string
         example: "Please provide a valid email"
@@ -68,18 +62,173 @@ patterns:
       - name: text
         type: string
         example: "Province"
-      - name: id
-        type: string
-        example: "error"
       - name: option-label
         type: string
         example: "Province"
-      - name: option
+      - name: option1
         type: string
         example: "Alberta"
+      - name: option
+        type: string
+        example: "option"
+        required: false
+      - name: option2
+        type: string
+        example: "British Columbia"
+        required: false
+      - name: option3
+        type: string
+        example: "Manitoba"
+        required: false
+      - name: option4
+        type: string
+        example: "New Brunswick"
+        required: false
+      - name: option5
+        type: string
+        example: "Newfoundland and Labrador"
+        required: false
+      - name: option6
+        type: string
+        example: "Northwest Territories"
+        required: false
+      - name: option7
+        type: string
+        example: "Nova Scotia"
+        required: false
+      - name: option8
+        type: string
+        example: "Nunavut"
+        required: false
+      - name: option9
+        type: string
+        example: "Ontario"
+        required: false
+      - name: option10
+        type: string
+        example: "Prince Edward Island"
+        required: false
+      - name: option11
+        type: string
+        example: "Quebec"
+        required: false
+      - name: option12
+        type: string
+        example: "Saskatchewan"
+        required: false
+      - name: option13
+        type: string
+        example: "Yukon"
+        required: false
       - name: icon-label
         type: string
         example: "Please select your province of residence"
+  drop-down-optional:
+    title: "Drop Down Selection — Optional"
+    description: |
+      This is an example of an optional dropdown menu, found (for example) on the Product Details pages.
+    fields:
+      - name: label
+        type: string
+        example: "options"
+      - name: text
+        type: string
+        example: "Options:"
+      - name: option-label
+        type: string
+        example: "Select a customization option"
+      - name: option1
+        type: string
+        example: "Default Box"
+      - name: option
+        type: string
+        example: "option"
+        required: false
+      - name: option2
+        type: string
+        example: "Avocado-free"
+        required: false
+      - name: option3
+        type: string
+        example: "Comeodogenic Only"
+        required: false
+  telephone:
+    title: "Telephone Input"
+    description: |
+      This is an example of an telephone number input field. On most browsers, this will default to a text input field.
+    fields:
+      - name: label
+        type: string
+        example: "tel"
+      - name: error
+        type: string
+        example: "tel-error"
+      - name: text
+        type: string
+        example: "Phone Number"
+      - name: icon-label
+        type: string
+        example: "Please provide a valid phone number"
+  quantity:
+    title: "Integer Input Form"
+    description: |
+      This is an example of an integer input form, which can be used for (amongst other things) quantities of items to be ordered.
+    fields:
+      - name: label
+        type: string
+        example: "quantity"
+      - name: text
+        type: string
+        example: "Quantity"
+  checkbox:
+    title: "Checkbox"
+    description: |
+      This is an example of a checked box selection field.
+    fields:
+      - name: id_1
+        type: string
+        example: "subscribe3"
+      - name: label_1
+        type: string
+        example: "Subscribe for 3 months and save 10%"
+      - name: id_2
+        type: string
+        example: "subscribe6"
+      - name: label_2
+        type: string
+        example: "Sign me up for the monthly newsletter"
+      - name: id_3
+        type: string
+        example: "no-subscribe"
+      - name: label_3
+        type: string
+        example: "Send me alerts about sales"
+  radio:
+    title: "Radio Selection"
+    description: |
+      This is an example of an radio button selection field.
+    fields:
+      - name: label
+        type: string
+        example: "credit-card"
+      - name: text
+        type: string
+        example: "Credit Card"
+      - name: name
+        type: string
+        example: "payment-method"
+      - name: error
+        type: string
+        example: "payment-method-error"
+      - name: label2
+        type: string
+        example: "paypal"
+      - name: text2
+        type: string
+        example: "PayPal"
+      - name: icon-label
+        type: string
+        example: "Please choose a payment method"
   search-bar:
     title: "Search Bar Form"
     description: |
