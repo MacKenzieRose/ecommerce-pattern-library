@@ -25,38 +25,45 @@ patterns:
     description: |
       This card is used to list products in an organized fashion on the product page.
     fields:
-      - name: aria
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+  product-details-card:
+    title: "Product Details Card"
+    description: |
+      This card is used to display a product's details to a user.
+    fields:
+      - name: method
         type: string
-        example: "This is a product card, featuring this month's product offerings"
-      - name: image-file
-        type: string
-        example: "caffeine.jpg"
-      - name: header
-        type: string
-        example: "This month: Japan"
-      - name: cost
-        type: string
-        example: "$55.00"
-      - name: text
-        type: string
-        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more."
+        example: "POST"
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
   image-card:
     title: "Alternating Image Cards"
     description: |
       This card is used to further advertise products on the homepage, but only appears at larger screen sizes.
     fields:
-      - name: aria
-        type: string
-        example: "This is an image card, featuring products and sales on the homepage"
       - name: header
         type: string
         example: "This month: Japan"
       - name: text
         type: string
-        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more. "
+        example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more."
       - name: image-file
         type: string
         example: "caffeine.jpg"
+      - name: header-two
+        type: string
+        example: "Next month: Seychelles"
+      - name: text-two
+        type: string
+        example: "Next month, we'll help you to escape to the tropics. Bring lasting hydration and new-found firmness to your skin with this Vitamin C care package, crafted in paradise."
+      - name: image-file-two
+        type: string
+        example: "grapefruit-box.jpg"
   checkout-card:
     title: "Checkout Card"
     description: |
@@ -65,9 +72,6 @@ patterns:
       - name: aria
         type: string
         example: "This is a product card, featuring this month's product offerings"
-      - name: id
-        type: string
-        example: "close"
       - name: image-file
         type: string
         example: "caffeine.jpg"
@@ -75,8 +79,8 @@ patterns:
         type: string
         example: "This month: Japan"
       - name: cost
-        type: string
-        example: "$55.00"
+        type: float
+        example: 55.00
       - name: text
         type: string
         example: "This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more."
@@ -86,3 +90,31 @@ patterns:
       - name: quantity
         type: integer
         example: 1
+  total:
+    title: "Purchase Total Calculation Card"
+    description: |
+      This card is used to summarize the user's purchase, and all associated costs and discounts. It is always paired with the Checkout Card.
+    fields:
+      - name: subtotal
+        type: float
+        example: 110.00
+      - name: shipping
+        type: float
+        example: 0
+      - name: taxes
+        type: float
+        example: 11.00
+      - name: discounts
+        type: float
+        example: 0
+      - name: total
+        type: float
+        example: 121.00
+  banner-card:
+    title: "Banner Card"
+    description: |
+      This card is used only in headers that incorporate a photographic background.
+    fields:
+      - name: h1
+        type: string
+        example: "Discover a whole world of options"
