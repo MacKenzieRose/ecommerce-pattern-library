@@ -1,0 +1,35 @@
+---
+layout: default
+title: Products
+highlight_nav: products
+---
+<main role="main" id="main" tabindex="0">
+  <div class="grid wrapper gutter-1-2">
+    <div class="unit [ xs-1 ]">
+      <h1 class="center-text pad-t push-0 nina">Products</h1>
+      <div class="pad-t pad-b">
+        <hr class="push-0">
+      </div>
+    </div>
+
+    <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2] text-center gutter">
+      {% pattern buttons/basic text="Filter" url="#" aria="This button allows you to filter which products are displayed to you" %}
+    </div>
+    <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2] text-center gutter">
+      {% pattern buttons/basic text="Sort" url="#" aria="This button allows you to sort the products that are displayed to you" %}
+    </div>
+
+    <div class="unit [ xs-1 ] pad-t pad-b-2">
+      <hr class="push-0">
+    </div>
+  </div>
+
+  <section class="wrapper">
+    <div class="grid">
+      {% for product in site.products %}
+        {% pattern cards/product-card data=product %}
+      {% endfor %}
+    </div>
+  </section>
+
+</main>
