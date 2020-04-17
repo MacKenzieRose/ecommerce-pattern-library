@@ -1,0 +1,21 @@
+title: "Banners"
+description: |
+  This is a list of all the styles of banners used on the Compendial site.
+
+patterns:
+  main:
+    title: "Main Graphic Banner"
+    description: |
+      This is an example of an photographic banner, which is displayed immediately after the page navigation, before the main site content.
+    fields:
+      - name: img
+        type: string
+        example: "grapefruit-box.jpg"
+  promotional:
+    title: "Promotional Banner"
+    description: |
+      This is an example of a promotional banner, which can be employed in a variety of colours and contexts.
+    fields:
+      - name: h2
+        type: string
+        example: "Things are on-sale!"

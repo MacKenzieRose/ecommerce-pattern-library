@@ -1,0 +1,9 @@
+.banner-img {
+  background-color: var(--color-banners);
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.green {
+  background-color: var(--color-banners);
+}
