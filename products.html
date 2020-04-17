@@ -27,7 +27,18 @@ highlight_nav: products
   <section class="wrapper">
     <div class="grid">
       {% for product in site.products %}
-        {% pattern cards/product-card data=product %}
+        {% if product.category == "current" %}
+          {% pattern cards/product-card data=product %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="wrapper">
+    <div class="grid">
+      {% for product in site.products %}
+        {% if product.category == "other" %}
+          {% pattern cards/product-card data=product %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>

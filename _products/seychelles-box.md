@@ -14,4 +14,5 @@ options:
   - "Option2"
 price: 55.00
 sale: 40.00
+category: current
 ---
