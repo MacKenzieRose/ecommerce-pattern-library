@@ -1,0 +1,83 @@
+<form method="{{include.method}}" action="#" novalidate>
+  <fieldset class="push-0">
+    <legend class="pad-t not-bold giga gutter-1-2">Shipping Address</legend>
+    <div class="grid gutter-1-4">
+      <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="first-name" error="first-name-error" text="First Name" icon-label="Please provide your first name" %}
+      </div>
+      <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="last-name" error="last-name-error" text="Last Name" icon-label="Please provide your last name" %}
+      </div>
+      <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="email" error="email-error" text="example@email.ca" icon-label="Please provide a valid email" %}
+      </div>
+      <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/telephone label="tel" error="tel-error" text="Phone Number" icon-label="Please provide a valid phone number" %}
+      </div>
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="adr" error="adr-error" text="Address Line 1" icon-label="Please provide a valid address" %}
+      </div>
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input-optional label="adr" text="Address Line 2 (optional)" %}
+      </div>
+      <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="city" error="city-error" text="City" icon-label="Please provide a valid city" %}
+      </div>
+      <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/drop-down label="province" error="province-error" text="Province/Territory" option-label="Province/Territory" option1="Alberta" option="option" option2="British Columbia" option3="Manitoba" option4="New Brunswick" option5="Newfoundland and Labrador" option6="Northwest Territories" option7="Nova Scotia" option8="Nunavut" option9="Ontario" option10="Prince Edward Island" option11="Québec" option12="Saskatchewan" option13="Yukon" icon-label="Please select your province of residence" %}
+      </div>
+      <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/text-input label="postal-code" error="postal-code-error" text="Postal Code" icon-label="Please provide a valid postal code" %}
+      </div>
+      <div class="unit [ xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] gutter-1-4 push-1-2">
+        {% pattern forms/drop-down label="Country" error="country-error" text="Country" option-label="Country" option1="Canada" option="option" option2="China" option3="Denmark" option4="Ecuador" option5="Germany" option6="Japan" option7="Mexico" option8="Panama" option9="Russia" option10="South Korea" option11="United States of America" option12="Vietnam" icon-label="Please select your province of residence" %}
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="push-0">
+    <legend class="pad-t not-bold giga gutter-1-2">Shipping Method</legend>
+    <div class="grid gutter-1-4">
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/radio label="standard" error="shipping-method-error" text="Standard (7–14 days)" name="shipping-method" label2="express" text2="Express (5–7 days)" icon-label="Please select a shipping method" %}
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="push-0">
+    <legend class="pad-t not-bold giga gutter-1-2">Billing Address</legend>
+    <div class="grid gutter-1-4">
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/radio label="same" error="billing-address-error" text="Same as shipping address" name="billing-address" label2="different" text2="Use different address" icon-label="Please select a billing address" %}
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="push-0">
+    <legend class="pad-t not-bold giga gutter-1-2">Payment Information</legend>
+    <div class="grid gutter-1-4">
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/radio label="credit-card" error="payment-method-error" text="Credit Card" name="payment-method" label2="paypal" text2="PayPal" icon-label="Please select a payment method" %}
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend class="pad-t not-bold giga gutter-1-2">Subscriptions</legend>
+    <div class="grid gutter-1-4">
+      <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-4 push-1-2">
+        {% pattern forms/checkbox id_1="subscribe3" label_1="Subscribe for 3 months and save 10%" id_2="subscribe6" label_2="Sign me up for the monthly newsletter" id_3="no-subscribe" label_3="Send me alerts about sales" %}
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="gutter-1-2 pad-t">
+    <hr class="push-0">
+  </div>
+
+  <div class="grid wrapper gutter-1-2 text-center">
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 xl-1-2 ] unit-push-m-1-4 unit-push-l-1-2 unit-push-xl-1-2 pad-t-2 pad-b-2">
+      {% pattern buttons/submit text="Confirm & Pay" aria="This button will submit your order, and process your method of payment." %}
+    </div>
+  </div>
+</form>
