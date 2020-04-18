@@ -251,3 +251,11 @@ patterns:
       - name: method
         type: string
         example: "POST"
+  full-checkout-form:
+    title: "Full Checkout Form"
+    description: |
+      This is the Checkout form that appears on the checkout page of the website.
+    fields:
+      - name: method
+        type: string
+        example: "POST"
