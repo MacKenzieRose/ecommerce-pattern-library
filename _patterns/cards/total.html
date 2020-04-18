@@ -4,27 +4,27 @@
   </div>
   <div class="max-length pad-t gutter-1-2">
     <table class="push-0" id="cart-total" tabindex="0">
-      <caption class="bold not-italic giga push-1-2">Order Summary</caption>
+      <caption class="bold not-italic giga push-1-2">{{include.caption}}</caption>
       <tbody>
         <tr>
-          <th scope="row" class="not-bold">Subtotal</th>
-          <td>${{include.subtotal}}</td>
+          <th scope="row" class="not-bold">{{include.header1}}</th>
+          <td>${{include.cell1}}</td>
         </tr>
         <tr>
-          <th scope="row" class="not-bold">Shipping</th>
-          <td>${{include.shipping}}</td>
+          <th scope="row" class="not-bold">{{include.header2}}</th>
+          <td>${{include.cell2}}</td>
         </tr>
         <tr>
-          <th scope="row" class="not-bold">Taxes</th>
-          <td>${{include.taxes}}</td>
+          <th scope="row" class="not-bold">{{include.header3}}</th>
+          <td>${{include.cell3}}</td>
         </tr>
         <tr>
-          <th scope="row" class="not-bold">Discounts</th>
-          <td>${{include.discounts}}</td>
+          <th scope="row" class="not-bold">{{include.header4}}</th>
+          <td>${{include.cell4}}</td>
         </tr>
         <tr>
-          <th scope="row" class="total">Total</th>
-          <td class="bold total">${{include.total}}</td>
+          <th scope="row" class="total">{{include.header5}}</th>
+          <td class="bold total">${{include.cell5}}</td>
         </tr>
       </tbody>
     </table>

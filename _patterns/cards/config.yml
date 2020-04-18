@@ -24,6 +24,7 @@ patterns:
     title: "Product Card"
     description: |
       This card is used to list products in an organized fashion on the product page.
+    width: 20em
     fields:
       - name: data
         type: object
@@ -33,6 +34,7 @@ patterns:
     title: "Product Details Card"
     description: |
       This card is used to display a product's details to a user.
+    width: 25em
     fields:
       - name: method
         type: string
@@ -95,19 +97,37 @@ patterns:
     description: |
       This card is used to summarize the user's purchase, and all associated costs and discounts. It is always paired with the Checkout Card.
     fields:
-      - name: subtotal
+      - name: caption
+        type: string
+        example: "Order Summary"
+      - name: header1
+        type: string
+        example: "Subtotal"
+      - name: cell1
         type: float
         example: 110.00
-      - name: shipping
+      - name: header2
+        type: string
+        example: "Shipping"
+      - name: cell2
         type: float
         example: 0
-      - name: taxes
+      - name: header3
+        type: string
+        example: "Taxes"
+      - name: cell3
         type: float
         example: 11.00
-      - name: discounts
+      - name: header4
+        type: string
+        example: "Discounts"
+      - name: cell4
         type: float
         example: 0
-      - name: total
+      - name: header5
+        type: string
+        example: "Total"
+      - name: cell5
         type: float
         example: 121.00
   banner-card:
