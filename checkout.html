@@ -3,42 +3,40 @@ layout: default
 title: Checkout
 highlight_nav: checkout
 ---
-<main role="main" id="main" tabindex="0">
-  <div class="grid wrapper gutter-1-2">
-    <div class="unit [ xs-1 ]">
-      <h1 class="center-text pad-t push-0 nina">Your Cart</h1>
-      <div class="pad-t pad-b">
-        <hr class="push-0">
-      </div>
-    </div>
-
-    <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2] text-center push-1-2 gutter">
-      {% pattern buttons/basic text="Keep Shopping" url="/products" aria="This button will take you back to the Products page" %}
-    </div>
-    <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2] text-center push-1-2 gutter">
-      {% pattern buttons/accent text="Checkout" url="#checkout" aria="This button will direct you to the checkout details section" %}
-    </div>
-
-    <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] pad-t-1-2 pad-b">
+<div class="grid">
+  <div class="unit [ xs-1 ]">
+    <h1 class="center-text pad-t push-0 nina">Your Cart</h1>
+    <div class="pad-t pad-b">
       <hr class="push-0">
     </div>
   </div>
 
-  <div class="grid grid-bottom wrapper pad-b">
-    {% pattern cards/checkout-card aria="This is the Japan product card, located in your cart" image-file="caffeine.jpg" header="This month: Japan" cost="55.00" text="This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more." option="Avocado-free" quantity="1" %}
-    <div class="unit [ xs-1 s-1 m-1 l-2-3 xl-2-3 ] gutter-1-2 pad-t">
-      <hr class="push-0">
-    </div>
-    {% pattern cards/checkout-card aria="This is the Seychelles product card, located in your cart" image-file="grapefruit-box.jpg" header="This month: Seychelles" cost="55.00" text="Next month, we'll help you to escape to the tropics. Bring lasting hydration and new-found firmness to your skin with this Vitamin C care package, created in paradise." option="Avocado-free" quantity="1" %}
-    {% pattern cards/total subtotal="110.00" shipping="0" taxes="11.00" discounts="0" total="121.00" %}
+  <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2] text-center push-1-2 gutter">
+    {% pattern buttons/basic text="Keep Shopping" url="/products" aria="This button will take you back to the Products page" %}
+  </div>
+  <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2] text-center push-1-2 gutter">
+    {% pattern buttons/accent text="Checkout" url="#checkout" aria="This button will direct you to the checkout details section" %}
   </div>
 
-  <div class="grid wrapper text-center">
-    <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-2 pad-t pad-b">
-      <hr class="push-0">
-    </div>
-    <div class="unit [ xs-1 s-1 m-1 l-2-3 xl-2-3 ] text-left" id="checkout" tabindex="0">
-      {% pattern forms/full-checkout-form %}
-    </div>
+  <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] pad-t-1-2 pad-b">
+    <hr class="push-0">
   </div>
-</main>
+</div>
+
+<div class="grid grid-bottom wrapper pad-b">
+  {% pattern cards/checkout-card aria="This is the Japan product card, located in your cart" image-file="caffeine.jpg" header="This month: Japan" cost="55.00" text="This month features a variety of products that hail from the land of the rising sun. Cleansing oils, overnight creams, masks, and essences, this box has everything you need and more." option="Avocado-free" quantity="1" %}
+  <div class="unit [ xs-1 s-1 m-1 l-2-3 xl-2-3 ] gutter-1-2 pad-t">
+    <hr class="push-0">
+  </div>
+  {% pattern cards/checkout-card aria="This is the Seychelles product card, located in your cart" image-file="grapefruit-box.jpg" header="This month: Seychelles" cost="55.00" text="Next month, we'll help you to escape to the tropics. Bring lasting hydration and new-found firmness to your skin with this Vitamin C care package, created in paradise." option="Avocado-free" quantity="1" %}
+  {% pattern cards/total caption="Order Summary" header1="Subtotal" cell1=110.0 header2="Shipping" cell2=0 header3="Taxes" cell3=11.0 header4="Discounts" cell4=0 header5="Total" cell5=121.0 %}
+</div>
+
+<div class="grid wrapper text-center">
+  <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] gutter-1-2 pad-t pad-b">
+    <hr class="push-0">
+  </div>
+  <div class="unit [ xs-1 s-1 m-1 l-2-3 xl-2-3 ] text-left" id="checkout" tabindex="0">
+    {% pattern forms/full-checkout-form %}
+  </div>
+</div>
