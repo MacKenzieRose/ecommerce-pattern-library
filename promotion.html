@@ -1,0 +1,25 @@
+---
+layout: default
+title: Promotions
+---
+
+<div class="pad-t-1-2">
+  {% pattern banners/main img="grapefruit-box.jpg" %}
+</div>
+
+{% pattern banners/promotional h2="Welcome spring sales!" %}
+
+<div class="grid">
+  {% for product in site.products limit:2 %}
+    {% if product.category == "other" %}
+    <div class="unit [ xs-1 s-1-2 m-1-2 l-1-2 xl-1-2 ] unit-content-distribute gutter-1-2 ">
+      {% pattern cards/product-card data=product %}
+      {% pattern buttons/accent text="Buy now" url="/checkout/" aria="This button links to the Checkout page" %}
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="grid center-content">
+  {% pattern cards/total caption="Savings with Multi-Month Subscriptions" header1="1 Month" cell1=60 header2="3 Months" cell2=55 header3="6 Months" cell3=50 header4="12 Months" cell4=40 header5="Total Possible Savings" cell5=240 %}
+</div>
