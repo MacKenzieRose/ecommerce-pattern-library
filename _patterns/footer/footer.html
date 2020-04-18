@@ -1,5 +1,5 @@
-<footer class="pink" role="contentinfo">
-  <div class="grid grid-middle pad-t pad-b wrapper">
+<footer role="contentinfo">
+  <div class="grid grid-middle pad-t pad-b wrapper pink">
     <div class="unit [ xs-1 s-1 m-1-2 l-1-2 xl-1-2 ] gutter-1-2 push">
       {% pattern forms/contact method="POST" %}
     </div>
@@ -22,7 +22,7 @@
         {% pattern buttons/footer-links url="#" aria="This link navigates you to our FAQ page" id="faq" text="FAQ" %}
       </li>
       <li>
-        {% pattern buttons/footer-links url="#" aria="This link navigates you to our contact page" id="contact" text="Contact Us" %}
+        {% pattern buttons/footer-links url="/privacy/" aria="This link navigates you to our privacy policy page" id="privacy" text="Privacy Policy" %}
       </li>
       <li>
         {% pattern buttons/footer-links url="#" aria="This link navigates you to our Shipping page" id="shipping" text="Shipping" %}

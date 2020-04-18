@@ -2,12 +2,12 @@
   background-color: var(--color-banners);
 }
 
-a {
+footer a {
   color: var(--color-primary-light);
 }
 
-a:hover,
-a:focus {
+footer a:hover,
+footer a:focus {
   color: var(--color-primary);
 }
 
