@@ -1121,10 +1121,12 @@ button:focus,
 select:focus {
   outline: 3px solid #000;
   outline-offset: 0;
+  z-index: 5000;
 }
 
 a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
+  z-index: 5000;
 }
 
 .skip-links {
